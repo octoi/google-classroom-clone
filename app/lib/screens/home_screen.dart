@@ -1,3 +1,4 @@
+import 'package:app/widgets/class_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,6 +34,19 @@ class HomeScreen extends StatelessWidget {
             color: Colors.black,
           ),
         ],
+      ),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          children: const [
+            ClassCard(),
+            ClassCard(),
+            ClassCard(),
+            ClassCard(),
+            ClassCard(),
+            ClassCard(),
+          ],
+        ),
       ),
     );
   }
